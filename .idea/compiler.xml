@@ -7,11 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SA_homework9" />
+        <module name="SA_homework6" />
+        <module name="SA_homework7" />
+        <module name="SA_homework8" />
         <module name="SA_homework12" />
         <module name="SA_homework13" />
         <module name="SA_homework10" />
         <module name="SA_homework11" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SA_homework8" options="-parameters" />
+    </option>
   </component>
 </project>
