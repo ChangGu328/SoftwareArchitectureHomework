@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SA_homework9" />
+        <module name="SA_homework16" />
         <module name="SA_homework6" />
         <module name="SA_homework7" />
         <module name="SA_homework14" />
