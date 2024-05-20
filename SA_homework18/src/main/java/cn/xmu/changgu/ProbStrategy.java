@@ -12,23 +12,23 @@ public class ProbStrategy implements Strategy {
             {1, 1, 1,},
     };
 
-    public ProbStrategy(int seed) {
-        random = new Random(seed);
+    public ProbStrategy() {
+        random = new Random();
     }
 
     public Hand nextHand() {
         int bet = random.nextInt(getSum(currentHandValue));
-        int handvalue = 0;
+        int handValue = 0;
         if (bet < history[currentHandValue][0]) {
-            handvalue = 0;
+            handValue = 0;
         } else if (bet < history[currentHandValue][0] + history[currentHandValue][1]) {
-            handvalue = 1;
+            handValue = 1;
         } else {
-            handvalue = 2;
+            handValue = 2;
         }
         prevHandValue = currentHandValue;
-        currentHandValue = handvalue;
-        return Hand.getHand(handvalue);
+        currentHandValue = handValue;
+        return Hand.getHand(handValue);
     }
 
     private int getSum(int hv) {

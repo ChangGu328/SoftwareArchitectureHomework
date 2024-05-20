@@ -7,8 +7,8 @@ public class WinningStrategy implements Strategy {
     private boolean won = false;
     private Hand prevHand;
 
-    public WinningStrategy(int seed) {
-        random = new Random(seed);
+    public WinningStrategy() {
+        random = new Random();
     }
 
     public Hand nextHand() {
