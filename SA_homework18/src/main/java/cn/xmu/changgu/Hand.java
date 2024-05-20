@@ -12,14 +12,14 @@ public class Hand {
     private static final String[] name = {      // 猜拳手势的字串
             "石头", "剪刀", "布",
     };
-    private final int handvalue;                      // 猜拳手势之值
+    private final int handValue;
 
-    private Hand(int handvalue) {
-        this.handvalue = handvalue;
+    private Hand(int handValue) {
+        this.handValue = handValue;
     }
 
-    public static Hand getHand(int handvalue) { // 从值取得实例
-        return hand[handvalue];
+    public static Hand getHand(int handValue) { // 从值取得实例
+        return hand[handValue];
     }
 
     public boolean isStrongerThan(Hand h) {     // 若this贏过h，则为true
@@ -33,7 +33,7 @@ public class Hand {
     private int fight(Hand h) {           // 平手则为0，若this胜出则为1、若h胜出则为-1
         if (this == h) {
             return 0;
-        } else if ((this.handvalue + 1) % 3 == h.handvalue) {
+        } else if ((this.handValue + 1) % 3 == h.handValue) {
             return 1;
         } else {
             return -1;
@@ -41,6 +41,6 @@ public class Hand {
     }
 
     public String toString() {            // 转换成字串
-        return name[handvalue];
+        return name[handValue];
     }
 }

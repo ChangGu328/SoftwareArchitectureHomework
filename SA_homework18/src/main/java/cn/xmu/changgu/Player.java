@@ -3,9 +3,9 @@ package cn.xmu.changgu;
 public class Player {
     private final String name;
     private final Strategy strategy;
-    private int wincount;
-    private int losecount;
-    private int gamecount;
+    private int winCount;
+    private int loseCount;
+    private int gameCount;
 
     public Player(String name, Strategy strategy) {         // 得到姓名和战略
         this.name = name;
@@ -18,24 +18,21 @@ public class Player {
 
     public void win() {                 // 猜贏
         strategy.study(true);
-        wincount++;
-        gamecount++;
+        winCount++;
+        gameCount++;
     }
 
     public void lose() {                // 猜输
         strategy.study(false);
-        losecount++;
-        gamecount++;
+        loseCount++;
+        gameCount++;
     }
 
     public void even() {                // 平手
-        gamecount++;
+        gameCount++;
     }
 
     public String toString() {
-        return "[" + name + ":" + gamecount + " games, " + wincount + " win, " + losecount + " lose" + "]";
+        return name + ": " + gameCount + " games, " + winCount + " win, " + loseCount + " lose";
     }
 }
-
-
-
