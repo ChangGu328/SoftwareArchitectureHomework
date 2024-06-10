@@ -2,7 +2,7 @@ package cn.xmu.changgu;
 
 public class Singleton {
     // 使用volatile关键字确保多线程环境下的可见性和禁止指令重排序
-    private static volatile Singleton instance;
+    private static volatile Singleton instance = null;
 
     // 私有构造函数，防止外部通过new创建多个实例
     private Singleton() {
