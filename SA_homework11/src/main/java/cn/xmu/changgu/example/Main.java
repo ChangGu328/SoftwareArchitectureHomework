@@ -18,9 +18,9 @@ public class Main {
         //请问：P1、P2、P3是什么？从那里来的？
         Product p1 = manager.create("strong message");
         p1.use("Hello, world.");
-        Product p2 = manager.create("strong message");
+        Product p2 = manager.create("warning box");
         p2.use("Hello, XMU.");
-        Product p3 = manager.create("strong message");
+        Product p3 = manager.create("slash box");
         p3.use("Hello, Software School.");
         Product p4 = manager.create("strong message");
         p4.use("Hello, Everyone.");
