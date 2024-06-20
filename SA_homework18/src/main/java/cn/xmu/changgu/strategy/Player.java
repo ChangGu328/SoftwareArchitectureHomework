@@ -1,4 +1,4 @@
-package cn.xmu.changgu;
+package cn.xmu.changgu.strategy;
 
 public class Player {
     private final String name;

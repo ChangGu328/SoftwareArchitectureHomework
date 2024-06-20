@@ -1,4 +1,4 @@
-package cn.xmu.changgu;
+package cn.xmu.changgu.strategy;
 
 import java.util.Random;
 

@@ -19,6 +19,7 @@
         <module name="SA_homework13" />
         <module name="SA_homework10" />
         <module name="SA_homework11" />
+        <module name="SA_finalReview" />
       </profile>
     </annotationProcessing>
   </component>
