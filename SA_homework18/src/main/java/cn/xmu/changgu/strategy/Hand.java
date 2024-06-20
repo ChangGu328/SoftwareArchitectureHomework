@@ -1,4 +1,4 @@
-package cn.xmu.changgu;
+package cn.xmu.changgu.strategy;
 
 public class Hand {
     public static final int HANDVALUE_GUU = 0;  // 表示石头之值
